@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+}
+
+.chats{
+    margin-bottom: 80px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.toggle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    height: 35px;
+    border: 1px solid lightgray;
+    border-radius: 18px;
+    margin: 15px 0px 25px 63px;
+}
+
+.t-btn{
+    border-radius: 15px;
+    width: 45%;
+    height: 33px;
+    border: none;
+}
+
+.chat-btn{
+    color: green;
+    background-color: darkgreen;
+}
+.chat-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+
+.bottom{
+    margin: 20px 23px 0px 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.chat-name{
+    flex: 3;
+    margin-left: 15px;
+}
+.message{
+    margin-top: 7px;
+    font-size: 11px;
+    color: gray;
+}
+.oldTime{
+    color: darkgray;
+    font-size: 13px;
+}
+
+.recentTime{
+    font-size: 13px;
+    color: darkgreen;
+}
+
+.shadow{
+    background-color: darkgray;
+}

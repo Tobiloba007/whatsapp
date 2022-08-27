@@ -1,0 +1,30 @@
+.missed-bottom{
+    margin: 30px 23px 0px 23px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.missed-img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+}
+.missed-name{
+    flex: 3;
+    margin-left: 15px;
+}
+
+.name{
+    margin-bottom: 15px;
+}
+
+.description{
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: gray;
+}
+.time{
+    color: darkgray;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
