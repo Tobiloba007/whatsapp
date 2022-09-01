@@ -7,26 +7,45 @@ import SettingsOutlinedIcon from '@mui/icons-material/SettingsOutlined';
 import {BrowserRouter as Router,
         Routes,
         Route,
-        Link} from "react-router-dom"
-import Chats from '../Chats/Chats';
+        NavLink} from "react-router-dom";
 import Calls from '../Calls/Calls';
 import Settings from '../Settings/Setings';
+import Group from '../Group/Group';
+import Chats from '../Chats/Chats';
+import Head from '../Head/Head';
+import Status from '../Status/Status';
 
 const Navbar = () => {
+ 
   return (
     <Router>
     <div className='navbar'>
     <div className='nav-container'>
-    <Link to="/"> <ForumOutlinedIcon className='button' /> </Link> 
-    <Link to="/calls"> <CallOutlinedIcon className='button' /> </Link> 
-    <Link to="/Contacts"> <PersonOutlinedIcon className='button' /> </Link> 
-    <Link to="/Settings"> <SettingsOutlinedIcon className='button' /> </Link> 
+    <NavLink exact to="/"
+     className='icon'
+      style={({ isActive }) => isActive? {color: 'rgb(56, 105, 56)'}: {color: 'rgb(177, 170, 170)'}}>
+       <ForumOutlinedIcon /> </NavLink> 
+    <NavLink to="/Calls" 
+    className='icon'
+    style={({ isActive }) => isActive? {color: 'rgb(56, 105, 56)'}: {color: 'rgb(177, 170, 170)'}}> 
+    <CallOutlinedIcon /> </NavLink> 
+    <NavLink to="/Contacts"
+     className='icon'
+     style={({ isActive }) => isActive? {color: 'rgb(56, 105, 56)'}: {color: 'rgb(177, 170, 170)'}}> 
+     <PersonOutlinedIcon /> </NavLink> 
+    <NavLink to="/Settings"
+     className='icon'
+     style={({ isActive }) => isActive? {color: 'rgb(56, 105, 56)'}: {color: 'rgb(177, 170, 170)'}}> 
+     <SettingsOutlinedIcon /> </NavLink> 
     </div>
     </div>
     <Routes>
-      <Route path='/' element={<Chats />} />
+      <Route path='/'  element={<Head />} />
+      <Route path='/Status'  element={<Status />} />
       <Route path='/Calls' element={<Calls />} />
+      <Route path='/group' element={<Group />} />
       <Route path='/Settings' element={<Settings />} />
+      <Route path='/Chats' element={<Chats />} />
     </Routes>
     </Router>
   )

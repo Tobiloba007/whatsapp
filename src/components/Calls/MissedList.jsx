@@ -7,6 +7,7 @@ const MissedList = () => {
     <div>
         {missedData.map((missed) => {
             return(
+              <div className="missed-wrapper">
                 <div className='missed-bottom'>
         <div>
             <img className='missed-img' src={missed.img} alt="Kwesi arthur" />
@@ -16,6 +17,7 @@ const MissedList = () => {
             <p className='description'>{missed.desc}</p>
          </div>
          <p className="time">{missed.time}</p>
+       </div>
        </div>
             )
         })}

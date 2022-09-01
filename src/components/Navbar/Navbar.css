@@ -18,9 +18,3 @@
     justify-content: space-evenly;
 }
 
-.button{
-    margin: 25px 0px;
-}
-.button:active{
-    background-color: green;
-}

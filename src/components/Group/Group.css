@@ -23,7 +23,7 @@
     margin: 15px 0px 25px 63px;
 }
 
-.t-btn{
+.tog-btn{
     border-radius: 15px;
     width: 45%;
     height: 33px;
@@ -31,9 +31,9 @@
     background-color: white;
 }
 
-.group-btn{
+.group-botton{
     color: white;
-    background-color: darkgreen;
+    background-color: rgb(56, 105, 56);
 }
 
 .chat-img{
@@ -69,4 +69,9 @@
 
 .shadow{
     background-color: darkgray;
+}
+
+.line{
+    opacity: 0.25;
+    margin: 0px 50px;
 }

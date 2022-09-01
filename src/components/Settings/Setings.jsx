@@ -60,7 +60,7 @@ const Setings = () => {
           </div>
 
           <div className='set'>
-          <DataUsageIcon className='icon' style={{color: 'green'}} />
+          <DataUsageIcon className='icon' style={{color: 'rgb(56, 105, 56)'}} />
           <div className='black'>
             <h4 className='subject'>Storage and Data</h4>
             <p className='content'>Manage storage, network usage...</p>
@@ -76,7 +76,7 @@ const Setings = () => {
           </div>
 
           <div className='set'>
-          <PeopleIcon className='icon' style={{color: 'green'}} />
+          <PeopleIcon className='icon' style={{color: 'rgb(56, 105, 56)'}} />
           <div className='black last'>
             <h4 className='subject'>Tell a Friend</h4>
             <p className='content'>Invite friends to the platform</p>

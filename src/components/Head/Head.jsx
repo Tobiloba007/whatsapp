@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './Head.css'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import SearchIcon from '@mui/icons-material/Search';
+import Status from '../Status/Status';
+import ToggleButton from '../ToggleButton/ToggleButton';
 
 const Head = () => {
   const [search, setSearch] = useState()
@@ -19,6 +21,8 @@ const Head = () => {
      </div>
     </div>
     <div className='search-bar'>{search}</div>
+    <Status />
+    <ToggleButton />
     </div>
   )
   }

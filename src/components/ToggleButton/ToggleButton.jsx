@@ -1,47 +1,44 @@
 import React, {useState} from 'react'
 import './ToggleButton.css'
-import Chats from '../Chats/Chats'
-import Group from '../Group/Group'
+import Chats from '../Chats/Chats';
+import Group from '../Group/Group';
 
 const ToggleButton = () => {
   const [info, setInfo] = useState(<Chats />);
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(true)
 
-  const chatButton = () => {
-    return(
+      function chatButton(){
+        return(
       setInfo(<Chats />),
-      setActive(true)
+      setActive(false)
     )
   }
+
   function groupButton() {
     return (
       setInfo(<Group />),
-      setActive(true)
+      setActive(false)
     )
   }
  
 
   return (
     <div className='toggleButton'>
-      <div className="toggle">
-        <button className='t-btn'
+       <div className="toggle">
+         <button className='t-btn chat-btn'
         style={{
-          backgroundColor: !active ? 'green': '',
-          color: !active ? 'white': 'black'
+          backgroundColor: active && 'rgb(56, 105, 56)',
+          color: active && 'white'
           }} 
          onClick={chatButton}
          >Chats</button>
         <button className='t-btn' 
-        style={{
-          backgroundColor: !active ? 'white': 'green',
-          color: !active ? 'black': 'white'
-          }} 
           onClick={groupButton}
           >Groups</button>
       </div>
-      {info}
+      {info} 
     </div>
   )
 }
 
-export default ToggleButton
+export default ToggleButton;

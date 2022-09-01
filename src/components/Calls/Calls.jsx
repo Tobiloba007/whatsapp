@@ -6,18 +6,18 @@ import PhoneIcon from '@mui/icons-material/Phone';
 
 const Calls = () => {
     const [info, setInfo] = useState(<CallList />);
-  const [active, setActive] = useState(false)
+    const [active, setActive] = useState(true);
 
   const callsButton = () => {
     return(
         setInfo(<CallList />),
-      setActive(true)
+        setActive(false)
     )
   }
   function missedButton() {
     return (
       setInfo(MissedList),
-      setActive(true)
+      setActive(false)
     )
   }
  
@@ -25,24 +25,20 @@ const Calls = () => {
   return (
     <div className='calls'>
     <div className='call-head'>
-    <PhoneIcon />
+    <PhoneIcon style={{color: 'rgb(56, 105, 56)'}} />
     <h3 className='call-heading'>Calls</h3>
     </div>
        <div className='fade'>
       <div className="toggle">
         <button className='t-btn'
-        style={{
-          backgroundColor: !active ? 'green': ' rgba(210, 214, 218, 0.164)',
-          color: !active ? 'white': 'black'
+         style={{
+          backgroundColor: active && 'rgb(56, 105, 56)',
+          color: active && 'white'
           }} 
          onClick={callsButton}
          >All Calls</button>
 
         <button className='t-btn' 
-        style={{
-          backgroundColor: !active ? ' rgba(210, 214, 218, 0.164)': 'green',
-          color: !active ? 'black': 'white'
-          }} 
           onClick={missedButton}
           >Missed</button>
       </div>

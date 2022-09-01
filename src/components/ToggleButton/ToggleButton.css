@@ -25,4 +25,9 @@
     height: 33px;
     border: none;
     background-color: white;
+    cursor: pointer;
+}
+ .hover, .t-btn:hover{
+    background-color: rgb(56, 105, 56);
+    color: white;
 }

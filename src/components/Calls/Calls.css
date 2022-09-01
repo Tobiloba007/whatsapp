@@ -44,3 +44,8 @@
     border: none;
     background-color: white;
 }
+
+.hover, .t-btn:hover{
+    background-color: rgb(56, 105, 56);
+    color: white;
+}

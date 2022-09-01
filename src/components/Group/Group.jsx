@@ -6,13 +6,9 @@ const Group = () => {
 
   return (
       <div>
-       {/* <div className="toggle">
-        <button className='t-btn'>Chats</button>
-        <button className='t-btn group-btn'>Groups</button>
-      </div>    */}
-  
       {groupData.map((group) => {
         return (
+          <div>
             <div className="bottom">
          <div>
            <img className='chat-img' src={group.img} alt=''/>
@@ -25,7 +21,8 @@ const Group = () => {
           <p className='recentTime'>{group.recentTime}</p>
           <p className='oldTime'>{group.oldTime}</p>
          </div>
-         <hr />
+         </div>
+         <hr className='line' />
          </div>
         )
       })}

@@ -1,22 +1,15 @@
 import React from 'react'
 import './Chats.css'
-import messages from '../../messageData'
-import Status from '../Status/Status'
-import Head from '../Head/Head'
-// import ToggleButton from '../ToggleButton/ToggleButton'
-
+import messages from '../../messageData' 
 
 const Chats = () => {
 
   return (
     <div>
-    <Head />
-    <Status />  
-    {/* <ToggleButton /> */}
-
+    
       {messages.map((chat) => {
         return (
-            
+            <div>
             <div className="bottom">
          <div>
            <img className='chat-img' src={chat.img} alt=''/>
@@ -27,12 +20,14 @@ const Chats = () => {
          </div>
          <div>
           <p className='recentTime'>{chat.recentTime}</p>
+          <p className='index'>{chat.index}</p>
           <p className='oldTime'>{chat.oldTime}</p>
          </div>
          </div>
+         <hr className='line' />
+         </div>
         )
       })}
-      <hr />
       </div>
   )
 }
