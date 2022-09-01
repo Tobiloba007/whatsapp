@@ -14,6 +14,7 @@ import Group from '../Group/Group';
 import Chats from '../Chats/Chats';
 import Head from '../Head/Head';
 import Status from '../Status/Status';
+import Contacts from '../Contacts/Contacts';
 
 const Navbar = () => {
  
@@ -46,6 +47,7 @@ const Navbar = () => {
       <Route path='/group' element={<Group />} />
       <Route path='/Settings' element={<Settings />} />
       <Route path='/Chats' element={<Chats />} />
+      <Route path='/Contacts' element={<Contacts />} />
     </Routes>
     </Router>
   )

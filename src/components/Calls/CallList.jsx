@@ -13,7 +13,7 @@ const CallList = () => {
          </div>
          <div className="call-name">
             <h4 className='name'>{calls.name}</h4>
-            <p className='description'>{calls.desc}</p>
+            <p className='description'>{calls.icon}{calls.desc}</p>
          </div>
          <div>
          <p className="time">{calls.time}</p>

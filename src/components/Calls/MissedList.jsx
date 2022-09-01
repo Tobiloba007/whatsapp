@@ -13,8 +13,8 @@ const MissedList = () => {
             <img className='missed-img' src={missed.img} alt="Kwesi arthur" />
          </div>
          <div className="missed-name">
-            <h4 className='name'>{missed.name}</h4>
-            <p className='description'>{missed.desc}</p>
+            <h4 className='name '>{missed.name}</h4>
+            <p className='miss-desc'>{missed.icon}{missed.desc}</p>
          </div>
          <p className="time">{missed.time}</p>
        </div>

@@ -20,11 +20,12 @@
     margin-bottom: 15px;
 }
 
-.description{
+.miss-desc{
+    color: red;
     margin-bottom: 10px;
     font-size: 15px;
-    color: gray;
 }
+
 .time{
     color: darkgray;
     font-size: 15px;

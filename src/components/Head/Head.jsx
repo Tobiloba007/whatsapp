@@ -9,7 +9,9 @@ const Head = () => {
   const [search, setSearch] = useState()
   const handleClick = () => {
     setSearch( <input className='search'
-      type="text" 
+      type="search" 
+      name='search'
+      rel='search'
      placeholder='search anything' /> )
   }
   return (

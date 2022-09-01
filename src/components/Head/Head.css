@@ -22,3 +22,8 @@
     margin-top: 15px;
 }
 
+input::placeholder{
+    margin-left: 50px;
+    font-size: 14px;
+}
+
