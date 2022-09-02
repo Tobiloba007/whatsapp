@@ -1,12 +1,12 @@
 .contacts{
-    background-color: #e0dede;
+    background-color: rgba(210, 214, 218, 0.164);
     height: 100vh;
 }
 
 .con-text{
     font-size: 21px;
     font-weight: 50px;
-    color: rgb(56, 105, 56);
+    color: green;
     text-align: center;
     margin-top: 25px;
 }

@@ -7,11 +7,11 @@
     flex-direction: column;
 }
 .search{
-    width: 95%;
-    padding: 10px 0px;
-    border: 1px solid rgb(56, 105, 56);
-    border-radius: 50px;
-    margin-left: 10px;
+    width: 80%;
+    /* padding: 10px 0px; */
+    /* border: 1px solid rgb(56, 105, 56); */
+    /* border-radius: 50px; */
+    margin-left: 35px;
 }
 .h-left{
     display: flex;
@@ -23,7 +23,7 @@
 }
 
 input::placeholder{
-    margin-left: 50px;
+    padding-left: 0px;
     font-size: 14px;
 }
 

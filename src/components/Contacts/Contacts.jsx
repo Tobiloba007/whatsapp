@@ -5,8 +5,8 @@ import NoAccountsOutlinedIcon from '@mui/icons-material/NoAccountsOutlined'
 const Contacts = () => {
   return (
     <div className='contacts'>
-        <NoAccountsOutlinedIcon style={{height: '100px', width: '100px', marginTop: '120px', marginLeft: '160px', color: 'red'}}/>
-        <p className='con-text'>There are no contacts at this time</p>
+        <NoAccountsOutlinedIcon style={{height: '100px', width: '100px', marginTop: '200px', marginLeft: '160px', color: 'red'}}/>
+        <p className='con-text'>There are no contacts at this time.</p>
     </div>
   )
 }
