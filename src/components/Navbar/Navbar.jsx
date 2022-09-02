@@ -40,6 +40,7 @@ const Navbar = () => {
      <SettingsOutlinedIcon /> </NavLink> 
     </div>
     </div>
+    
     <Routes>
       <Route path='/'  element={<Head />} />
       <Route path='/Status'  element={<Status />} />
