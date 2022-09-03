@@ -27,7 +27,7 @@ const Status = () => {
         )
       })}
 
-       </div>
+        </div>
         </div>
     )
 }

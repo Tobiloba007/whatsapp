@@ -2,8 +2,12 @@
     margin: 0;
     padding: 0;
   }
+
+.wrapper{
+    background: linear-gradient(#c0f7bbc9, #f6f8f6); 
+}  
 .container{
-    margin-top: 25px;
+    margin-top: 20px;
 }
 .add-status{
     border-radius: 50%;
@@ -23,6 +27,7 @@
     display: flex;
     overflow-x: scroll;
     white-space: no-wrap;
+    margin-top: -15px;
 }
 .con-bottom::-webkit-scrollbar{
     display: none;
